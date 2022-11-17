@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Dancing+Script:wght@700&family=Fredoka&family=Lato:ital@1&family=Montserrat:ital,wght@1,300&family=Mulish&family=Open+Sans:ital@1&family=Oswald&family=Permanent+Marker&family=Press+Start+2P&family=Roboto+Slab&family=Roboto:ital@0;1&family=Tapestry&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mean {
+  width: 70vw;
+  height: 80vh;
+  /* border: 4px solid rgb(103, 20, 34); */
+  background-color: rgba(17, 17, 17, 0.8);
+  border-radius: 15px;
+  display: flex;
+  gap: 0.5em;
+}
+.song-box {
+  width: 35vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(103, 20, 34);
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px rgb(103, 20, 34);
+}
+
+.songs {
+  overflow-x: auto;
+}
+
+.songs::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+.music-box {
+  width: 60vw;
+  height: 100%;
+  border: 2px solid rgb(103, 20, 34);
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px rgb(103, 20, 34);
+}
+.mp3-box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 95%;
+  height: 52px;
+  border-radius: 15px;
+  border: 1px solid rgb(103, 20, 34);
+  margin: auto;
+  margin-top: 7px;
+  align-items: center;
+  color: rgb(103, 20, 34);
+}
+.pics {
+  width: 50px;
+  height: 50px;
+}
+#mp3-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.artist {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+.song-title {
+  font-family: "Roboto Slab", serif;
+  font-weight: bolder;
+}
+.play-font {
+  color: rgb(186, 69, 87);
+  font-size: 25px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+.play-font:hover {
+  color: rgb(118, 34, 47);
+}
+.btns {
+  width: 100%;
+  height: 40px;
+  /* background-color:rgb(103,20,34); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+}
+
+.all,
+.hit {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(186, 69, 87);
+  text-align: center;
+  padding-top: 7px;
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.all:hover {
+  background-color: rgb(97, 14, 26);
+}
+.hit:hover {
+  background-color: rgb(97, 14, 26);
+}
+.container {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  margin-top: 8%;
+  height: 80%;
+  background-color: rgb(186, 69, 87);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4%;
+  border-radius: 15px;
+  border: 2px solid rgb(97, 14, 26);
+  padding: 30px 0;
+}
+.cover {
+  width: 40%;
+  height: 36%;
+  border-radius: 50%;
+  position: relative;
+}
+.cover img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.point {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(186, 69, 87);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 42%;
+}
+.singer {
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: capitalize;
+  color: rgb(97, 14, 26);
+  font-size: 1rem;
+}
+.mysong {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: rgb(97, 14, 26);
+  font-size: 1.4rem;
+
+}
+
+/* #myprogress {
+  cursor: pointer;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(103, 20, 34);
+} */
+.fonts {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 35px;
+  gap: 2rem;
+  color: rgb(103, 20, 34);
+}
+.prev,
+.next,
+.play {
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+.play:hover {
+  color: rgb(17, 2, 4);
+}
+.prev:hover {
+  color: rgb(17, 2, 4);
+}
+.next:hover {
+  color: rgb(17, 2, 4);
+}
+
+.coverrotate {
+  animation: rotatebox 0.5s;
+  
+  
+}
+
+@keyframes rotatebox {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.progress-bar {
+  width: 50%;
+  height: 30px;
+  margin-top: 15px;
+  /* background-color: white; */
+}
+.progresser-box{
+  width: 100%;
+  height:0.3rem;
+  background-color:white;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+.progresser{
+  width: 0%;
+  height:100%;
+  position: absolute;
+  background-color: rgb(103, 20, 34);
+  cursor: pointer;
+}
+.time-meter{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:4px;
+  color:rgb(103, 20, 34);
+  font-family: 'Baloo Bhai 2', cursive;
+}
+@media only screen and (max-width: 800px){
+.mean{
+  flex-direction: column-reverse;
+}
+.song-box{
+  width: 100%;
+  height: 32%;
+}
+.music-box{
+  width: 100%;
+  height: 67%;
+}
+
+}
+@media only screen and (max-width: 650px){
+  .mean{
+    width: 100vw;
+    height: 100vh;
+  }
+  .progress-bar{
+    width: 65%;
+  }
+  .singer{
+    font-size:0.8rem;
+  }
+  .mysong{
+    font-size:1rem;
+  }
+  .play-font{
+    font-size:18px;
+  }
+  .artist,.song-title{
+    font-size:12px;
+  }
+}
